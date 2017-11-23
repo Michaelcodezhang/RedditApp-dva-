@@ -21,7 +21,8 @@ export default {
             "services": "./src/services",
             "utils": "./src/utils"
           }
-        }]
+        }],
+        ["import",{"libraryName":"antd","style":"css"}]
       ]
     },
     'production': {

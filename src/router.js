@@ -32,14 +32,7 @@ const Routers = ({history, app}) => {
           return r.keys().map(key => r(key))
         })(require.context('./', true, /^\.\/routes\/((?!\/)[\s\S])+\/route\.js$/)))
       }
-    },
-    {
-      path: '*',
-      component: asyncComponent({
-        resolve: () => import('./routes/404.js')
-      })
     }]
-
   return <Router history={history} routes={routes} />
 }
 
